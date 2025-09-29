@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://{DOMAIN}/</loc><priority>1.0</priority></url>
+  <url><loc>https://{DOMAIN}/#services</loc></url>
+  <url><loc>https://{DOMAIN}/#about</loc></url>
+  <url><loc>https://{DOMAIN}/#benefits</loc></url>
+  <url><loc>https://{DOMAIN}/#steps</loc></url>
+  <url><loc>https://{DOMAIN}/#cases</loc></url>
+  <url><loc>https://{DOMAIN}/#reviews</loc></url>
+  <url><loc>https://{DOMAIN}/#contacts</loc></url>
+</urlset>

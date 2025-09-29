@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="{LOCALE}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{BRAND} — фумигация, логистика и таможенные услуги в Санкт-Петербурге</title>
+  <meta name="description" content="{BRAND}: фумигация зерна и тары, логистические и таможенные услуги под ключ. 7+ лет опыта, 5000+ обработок, индивидуальный подход, гарантия сроков и безопасности.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{LOCALE}">
+  <meta property="og:site_name" content="{BRAND}">
+  <meta property="og:title" content="{BRAND} — фумигация, логистика и таможенные услуги">
+  <meta property="og:description" content="Комплексные услуги: фумигация, логистика, таможенное сопровождение. Консультация и расчёт стоимости.">
+  <meta property="og:url" content="https://{DOMAIN}/">
+  <meta property="og:image" content="https://{DOMAIN}/assets/img/hero.webp">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{BRAND} — фумигация, логистика и таможня">
+  <meta name="twitter:description" content="Полный цикл услуг для вашего груза.">
+  <meta name="twitter:image" content="https://{DOMAIN}/assets/img/hero.webp">
+
+  <link rel="canonical" href="https://{DOMAIN}/">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="{PRIMARY_COLOR}">
+
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="page">
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="/" class="logo" aria-label="{BRAND} на главную">
+        <span class="logo__mark">ДАР</span>
+        <span class="logo__text">{BRAND}</span>
+      </a>
+
+      <nav class="nav" aria-label="Главное меню">
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__list" id="desktopMenu">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">О компании</a></li>
+          <li><a href="#benefits">Преимущества</a></li>
+          <li><a href="#steps">Этапы</a></li>
+          <li><a href="#cases">Кейсы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="mobileMenu" hidden>
+      <ul class="drawer__list">
+        <li><a href="#services" data-close>Услуги</a></li>
+        <li><a href="#about" data-close>О компании</a></li>
+        <li><a href="#benefits" data-close>Преимущества</a></li>
+        <li><a href="#steps" data-close>Этапы</a></li>
+        <li><a href="#cases" data-close>Кейсы</a></li>
+        <li><a href="#reviews" data-close>Отзывы</a></li>
+        <li><a href="#contacts" data-close>Контакты</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Главный экран">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__badge">Информация онлайн: +7 (812) 001-20-80</p>
+          <h1 class="hero__title">Фумигация, логистика и таможенные услуги в Санкт-Петербурге</h1>
+          <p class="hero__subtitle">Мы берём на себя обработку, оформление и транспортировку. Сохраняем качество груза и избегаем задержек.</p>
+          <ul class="hero__stats" role="list">
+            <li><strong>2017</strong><span>год основания компании</span></li>
+            <li><strong>5000+</strong><span>обработок и отгрузок</span></li>
+          </ul>
+          <a class="btn btn--primary" href="#contacts">Заказать услугу</a>
+        </div>
+        <picture class="hero__media">
+          <source srcset="/assets/img/hero.webp 1x" type="image/webp">
+          <img src="/assets/img/hero.webp" width="640" height="640" loading="eager" decoding="async" alt="Сотрудник проводит фумигацию контейнера">
+        </picture>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <h2 class="section__title" id="servicesTitle">Наши услуги</h2>
+        <div class="cards cards--services">
+          <!-- Фумигация -->
+          <article class="card service">
+            <picture class="card__media">
+              <img src="/assets/img/services/fumigation.webp" loading="lazy" width="480" height="320" alt="Фумигация груза">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Фумигация</h3>
+              <ul class="list">
+                <li>Обработка контейнеров и трюмов</li>
+                <li>Сертификация и контроль</li>
+                <li>Гарантия безопасности</li>
+              </ul>
+              <a href="#contacts" class="btn btn--ghost">Заказать</a>
+            </div>
+          </article>
+          <!-- Логистика -->
+          <article class="card service">
+            <picture class="card__media">
+              <img src="/assets/img/services/logistics.webp" loading="lazy" width="480" height="320" alt="Логистические операции">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Логистические услуги</h3>
+              <ul class="list">
+                <li>Мультимодальные перевозки</li>
+                <li>Оптимизация маршрутов</li>
+                <li>Склад и экспедирование</li>
+              </ul>
+              <a href="#contacts" class="btn btn--ghost">Заказать</a>
+            </div>
+          </article>
+          <!-- Таможня -->
+          <article class="card service">
+            <picture class="card__media">
+              <img src="/assets/img/services/customs.webp" loading="lazy" width="480" height="320" alt="Таможенное оформление">
+            </picture>
+            <div class="card__content">
+              <h3 class="card__title">Таможенные услуги</h3>
+              <ul class="list">
+                <li>Подготовка и сопровождение</li>
+                <li>Консультации по классификации</li>
+                <li>Экспорт/импорт под ключ</li>
+              </ul>
+              <a href="#contacts" class="btn btn--ghost">Заказать</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--alt" id="about" aria-labelledby="aboutTitle">
+      <div class="container about">
+        <div class="about__content">
+          <h2 class="section__title" id="aboutTitle">О компании</h2>
+          <p>ООО «{BRAND}» — эксперт в фумигации, логистике и таможенном сопровождении с 2017 года. Работаем со сложными грузами, соблюдаем международные нормы и сроки.</p>
+          <p>Наши клиенты: экспортеры зерна, трейдеры, терминалы, судовладельцы и производители. Мы берём ответственность за результат и прозрачность на каждом этапе.</p>
+          <a href="#contacts" class="btn btn--primary">Оставить заявку</a>
+        </div>
+        <picture class="about__media">
+          <img src="/assets/img/about.webp" loading="lazy" width="560" height="380" alt="Команда {BRAND} на объекте">
+        </picture>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" id="benefits" aria-labelledby="benefitsTitle">
+      <div class="container">
+        <h2 class="section__title" id="benefitsTitle">Почему выбирают нас</h2>
+        <ul class="benefits" role="list">
+          <li class="benefit"><h3>7+ лет опыта</h3><p>Практика в портах и на ЖД-узлах.</p></li>
+          <li class="benefit"><h3>Современные технологии</h3><p>Контроль концентрации, безопасные препараты.</p></li>
+          <li class="benefit"><h3>Индивидуальный подход</h3><p>Под задачу клиента и тип груза.</p></li>
+          <li class="benefit"><h3>Ответственность</h3><p>Страхование и документы в порядке.</p></li>
+          <li class="benefit"><h3>Комплексность</h3><p>От фумигации до логистики и таможни.</p></li>
+          <li class="benefit"><h3>Гибкая цена</h3><p>Прозрачные сметы без сюрпризов.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="section section--alt" id="steps" aria-labelledby="stepsTitle">
+      <div class="container">
+        <h2 class="section__title" id="stepsTitle">Этапы работы</h2>
+        <ol class="steps">
+          <li><span>01</span><h3>Заявка</h3><p>Оставьте контакты — мы перезвоним в 15 минут.</p></li>
+          <li><span>02</span><h3>Консультация</h3><p>Уточним маршрут, вид груза и сроки.</p></li>
+          <li><span>03</span><h3>Исполнение</h3><p>Фумигация, логистика, оформление.</p></li>
+          <li><span>04</span><h3>Результат</h3><p>Отчёт, акты, фотофиксация, закрывающие.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="section" id="cases" aria-labelledby="casesTitle">
+      <div class="container">
+        <h2 class="section__title" id="casesTitle">Наш опыт в цифрах и примерах</h2>
+        <div class="cards cards--cases">
+          <article class="card case">
+            <img src="/assets/img/cases/case-1.webp" loading="lazy" width="480" height="320" alt="Фумигация зерна для экспорта">
+            <div class="card__content">
+              <h3 class="card__title">Фумигация зерна для экспортера</h3>
+              <p>5000+ тонн, срок 72 часа, без простоев.</p>
+            </div>
+          </article>
+          <article class="card case">
+            <img src="/assets/img/cases/case-2.webp" loading="lazy" width="480" height="320" alt="Логистика древесины">
+            <div class="card__content">
+              <h3 class="card__title">Логистика древесины</h3>
+              <p>20 контейнеров в месяц, 0 повреждений.</p>
+            </div>
+          </article>
+          <article class="card case">
+            <img src="/assets/img/cases/case-3.webp" loading="lazy" width="480" height="320" alt="Таможенное сопровождение">
+            <div class="card__content">
+              <h3 class="card__title">Таможенное сопровождение</h3>
+              <p>Классификация, декларация, выпуск за 2 дня.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section--alt" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <h2 class="section__title" id="reviewsTitle">Что говорят клиенты</h2>
+        <div class="slider" data-slider>
+          <div class="slider__track">
+            <article class="review">
+              <img class="review__avatar" src="/assets/img/reviews/avatar-1.webp" width="64" height="64" loading="lazy" alt="Аватар клиента">
+              <div>
+                <h3 class="review__author">ООО «АгроГрейн», Санкт-Петербург</h3>
+                <p class="review__text">«{BRAND} помогли обработать партию зерна и оформить экспорт без задержек. Рекомендуем.»</p>
+              </div>
+            </article>
+            <article class="review">
+              <img class="review__avatar" src="/assets/img/reviews/avatar-2.webp" width="64" height="64" loading="lazy" alt="Аватар клиента">
+              <div>
+                <h3 class="review__author">ООО «ИмпортЛог», Москва</h3>
+                <p class="review__text">«Взяли на себя логистику и таможню, всё прозрачно и по срокам.»</p>
+              </div>
+            </article>
+            <article class="review">
+              <img class="review__avatar" src="/assets/img/reviews/avatar-3.webp" width="64" height="64" loading="lazy" alt="Аватар клиента">
+              <div>
+                <h3 class="review__author">ТК «БалтикТрейд», СПб</h3>
+                <p class="review__text">«От отчётов до фото — полный контроль. Будем работать дальше.»</p>
+              </div>
+            </article>
+          </div>
+          <button class="slider__btn slider__btn--prev" aria-label="Предыдущий отзыв" data-prev></button>
+          <button class="slider__btn slider__btn--next" aria-label="Следующий отзыв" data-next></button>
+          <div class="slider__dots" aria-label="Пагинация отзывов" role="tablist"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="section" id="contacts" aria-labelledby="contactsTitle">
+      <div class="container contacts">
+        <div class="contacts__info">
+          <h2 class="section__title" id="contactsTitle">Свяжитесь с нами</h2>
+          <ul class="contact-list" role="list">
+            <li><strong>Телефон:</strong> <a href="tel:+78120012080">+7 (812) 001-20-80</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@{DOMAIN}">info@{DOMAIN}</a></li>
+            <li><strong>Адрес:</strong> Санкт-Петербург, наб. Реки Карповки, 12</li>
+            <li><strong>График:</strong> Пн–Сб 9:00–20:00</li>
+          </ul>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <label class="form__field">Имя
+              <input type="text" name="name" placeholder="Ваше имя" required minlength="2" autocomplete="name">
+            </label>
+            <label class="form__field">Телефон
+              <input type="tel" name="phone" placeholder="+7 ___ ___-__-__" required inputmode="tel">
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="form__field">Email
+              <input type="email" name="email" placeholder="you@{DOMAIN}" required autocomplete="email">
+            </label>
+            <label class="form__field">Сообщение
+              <textarea name="message" rows="3" placeholder="Коротко опишите задачу"></textarea>
+            </label>
+          </div>
+          <label class="form__checkbox">
+            <input type="checkbox" required>
+            <span>Соглашаюсь с обработкой персональных данных</span>
+          </label>
+          <button class="btn btn--primary" type="submit">Отправить</button>
+          <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="/" class="logo"><span class="logo__mark">ДАР</span><span class="logo__text">{BRAND}</span></a>
+        <p>© <span id="year"></span> {BRAND}. Все права защищены.</p>
+      </div>
+      <nav aria-label="Ссылки футера">
+        <ul class="footer__links">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">О компании</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="/robots.txt">robots.txt</a></li>
+          <li><a href="/sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"{BRAND}",
+    "url":"https://{DOMAIN}/",
+    "email":"info@{DOMAIN}",
+    "telephone":"+7-812-001-20-80",
+    "logo":"https://{DOMAIN}/favicon.ico",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Санкт-Петербург",
+      "streetAddress":"наб. Реки Карповки, 12",
+      "addressCountry":"RU"
+    },
+    "sameAs":[]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Главная","item":"https://{DOMAIN}/"},
+      {"@type":"ListItem","position":2,"name":"Услуги","item":"https://{DOMAIN}/#services"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Фумигация, логистика и таможенное сопровождение",
+    "provider":{"@type":"Organization","name":"{BRAND}"},
+    "areaServed":"RU",
+    "offers":{"@type":"Offer","url":"https://{DOMAIN}/#contacts","priceCurrency":"RUB"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Review",
+    "itemReviewed":{"@type":"Organization","name":"{BRAND}"},
+    "author":{"@type":"Organization","name":"ООО «АгроГрейн»"},
+    "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+    "reviewBody":"Помогли быстро оформить экспорт без задержек."
+  }
+  </script>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
