@@ -1,75 +1,95 @@
 <!doctype html>
-<article class="card"><h3>Услуга 3</h3><p>Короткое описание услуги.</p></article>
-</div>
-</div>
-</section>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Каркас сайта — Header + Бургер</title>
+  <meta name="description" content="Базовый адаптивный каркас сайта с шапкой, бургер-меню и доступностью (ARIA)." />
+  <link rel="stylesheet" href="assets/css/styles.css">
 
 
-<section class="section" id="about" aria-labelledby="aboutTitle">
-<div class="container">
-<h2 class="section__title" id="aboutTitle">О нас</h2>
-<div class="card"><p>Информация о компании. Текст‑заглушка для демонстрации сетки и типографики.</p></div>
-</div>
-</section>
+
+</head>
+<body>
+  <!-- ====== HEADER ====== -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="На главную">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>BrandName</span>
+      </a>
+
+      <!-- Навигация для десктопа -->
+      <nav class="desktop-nav" aria-label="Главное меню" hidden>
+        <ul class="nav-list" id="primary-nav">
+          <li><a class="nav-link" href="#features">Возможности</a></li>
+          <li><a class="nav-link" href="#pricing">Цены</a></li>
+          <li><a class="nav-link" href="#cases">Кейсы</a></li>
+          <li><a class="nav-link" href="#blog">Блог</a></li>
+          <li><a class="nav-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA справа на десктопе -->
+      <div class="header-cta" role="group" aria-label="Быстрые действия">
+        <a class="btn" href="#login">Войти</a>
+        <a class="btn primary" href="#signup">Создать аккаунт</a>
+      </div>
+
+      <!-- Бургер для мобилы -->
+      <button class="burger" type="button" aria-controls="mobile-panel" aria-expanded="false" aria-label="Открыть меню" data-burger>
+        <span class="burger-bars"><span></span></span>
+      </button>
+    </div>
+
+    <!-- Мобильная панель -->
+    <div class="mobile-panel" id="mobile-panel" aria-hidden="true" data-mobile-panel>
+      <div class="mobile-sheet" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+        <div class="mobile-head">
+          <span class="mobile-title">Меню</span>
+          <button class="burger" type="button" aria-label="Закрыть меню" data-close>
+            <span class="burger-bars"><span></span></span>
+          </button>
+        </div>
+
+        <nav class="mobile-nav" aria-label="Мобильное меню">
+          <ul class="mobile-list">
+            <li><a class="mobile-link" href="#features">Возможности</a></li>
+            <li><a class="mobile-link" href="#pricing">Цены</a></li>
+            <li><a class="mobile-link" href="#cases">Кейсы</a></li>
+            <li><a class="mobile-link" href="#blog">Блог</a></li>
+            <li><a class="mobile-link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-foot container">
+          <a class="btn" href="#login">Войти</a>
+          <a class="btn primary" href="#signup">Создать аккаунт</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== КОНТЕНТ (демо-блоки) ====== -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Готовый адаптивный каркас сайта</h1>
+        <p>Чистый HTML/CSS/JS: липкая шапка, бургер-меню, доступность (ARIA), плавные переходы, сетка карточек. Замените контент под свой проект.</p>
+        <div>
+          <a class="btn primary" href="#">Начать</a>
+          <a class="btn" href="#features">Подробнее</a>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Адаптивность</h3><p>Мобильная панель + десктопная навигация с переключением на 768px.</p></article>
+        <article class="card"><h3>Доступность</h3><p>ARIA-атрибуты, управление клавиатурой, закрытие по Esc, блокировка скролла.</p></article>
+        <article class="card"><h3>Готов к продакшену</h3><p>Минимум зависимостей, только нативный JS и современный CSS.</p></article>
+      </div>
+    </section>
+  </main>
 
 
-<section class="section" id="cases" aria-labelledby="casesTitle">
-<div class="container">
-<h2 class="section__title" id="casesTitle">Кейсы</h2>
-<div class="feature">
-<article class="card"><h3>Кейс 1</h3><p>Краткий результат: сроки, метрики.</p></article>
-<article class="card"><h3>Кейс 2</h3><p>Краткий результат: сроки, метрики.</p></article>
-<article class="card"><h3>Кейс 3</h3><p>Краткий результат: сроки, метрики.</p></article>
-</div>
-</div>
-</section>
-
-
-<section class="section" id="contacts" aria-labelledby="contactsTitle">
-<div class="container">
-<h2 class="section__title" id="contactsTitle">Контакты</h2>
-<div class="card">
-<form class="form" id="contactForm" novalidate>
-<div class="form__grid">
-<label class="form__field">Имя
-<input class="input" type="text" name="name" placeholder="Ваше имя" required minlength="2">
-</label>
-<label class="form__field">Телефон
-<input class="input" type="tel" name="phone" placeholder="+7 ___ ___-__-__" required>
-</label>
-<label class="form__field">Email
-<input class="input" type="email" name="email" placeholder="you@example.com" required>
-</label>
-<label class="form__field">Сообщение
-<textarea class="input" name="message" rows="3" placeholder="Коротко опишите задачу"></textarea>
-</label>
-<button class="btn btn--primary" type="submit">Отправить</button>
-<p id="formNote" role="status" aria-live="polite" class="form__note"></p>
-</div>
-</form>
-</div>
-</div>
-</section>
-</main>
-
-
-<footer class="footer">
-<div class="container footer__grid">
-<div>
-<a href="#" class="logo"><span class="logo__mark">B</span><span>Brand</span></a>
-<p class="footer__copy">© <span id="year"></span> Brand. Все права защищены.</p>
-</div>
-<nav aria-label="Ссылки футера">
-<ul class="footer__links">
-<li><a href="#services">Услуги</a></li>
-<li><a href="#about">О нас</a></li>
-<li><a href="#contacts">Контакты</a></li>
-</ul>
-</nav>
-</div>
-</footer>
-
-
-<script src="/assets/js/main.js" defer></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
